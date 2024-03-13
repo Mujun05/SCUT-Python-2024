@@ -1,0 +1,12 @@
+import turtle
+turtle.circle(200)
+turtle.penup()
+turtle.goto(200,200)
+turtle.pendown()
+turtle.seth(150)
+turtle.forward(200*1.732)
+turtle.seth(270)
+turtle.forward(200*1.732)
+turtle.seth(390)
+turtle.forward(200*1.732)
+input()

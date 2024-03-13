@@ -1,0 +1,1 @@
+print('{}{}'.format("a","b"))

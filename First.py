@@ -1,2 +1,0 @@
-Print ("Hello, world!")
-input ()
