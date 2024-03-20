@@ -19,5 +19,3 @@ if (B_A_x/C_A_x)!=(B_A_y/C_A_y):
     print('该三角形的面积是：{}'.format(Area))
 else:
     print("这三个点构不成一个三角形")
-def example():
-    input("请输入第{}个点的坐标（中间用空格隔开）：".format())
