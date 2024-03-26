@@ -11,5 +11,3 @@ elif T=="*":
     print(FNum*SNum)
 elif T=="/":
     print(FNum/SNum)
-elif T=="%":
-    print(FNum%SNum)
