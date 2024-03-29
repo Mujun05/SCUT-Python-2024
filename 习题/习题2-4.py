@@ -1,21 +1,21 @@
-PointA=input("请输入第一个点的坐标（中间用空格隔开）：")
-PointB=input("请输入第二个点的坐标（中间用空格隔开）：")
-PointC=input("请输入第三个点的坐标（中间用空格隔开）：")
-ArrayA=PointA.split()
-ArrayB=PointB.split()
-ArrayC=PointC.split()
+PointA=input("请输入第一个点的坐标（中间用,隔开）：")
+PointB=input("请输入第二个点的坐标（中间用,隔开）：")
+PointC=input("请输入第三个点的坐标（中间用,隔开）：")
+ArrayA=PointA.split(',')
+ArrayB=PointB.split(',')
+ArrayC=PointC.split(',')
 A_x=eval(ArrayA[0])
 A_y=eval(ArrayA[1])
 B_x=eval(ArrayB[0])
 B_y=eval(ArrayB[1])
 C_x=eval(ArrayC[0])
 C_y=eval(ArrayC[1])
-B_A_x=B_x-A_x
-C_A_x=C_x-A_x
-B_A_y=B_y-A_y
-C_A_y=C_y-A_y
-if (B_A_x/C_A_x)!=(B_A_y/C_A_y):
-    Area=1/2*abs((B_A_x)*(C_A_y)-(B_A_y)*(C_A_x))
-    print('该三角形的面积是：{}'.format(Area))
-else:
+AB=((A_x-B_x)**2+(A_y-B_y)**2)**(1/2)
+BC=((B_x-C_x)**2+(B_y-C_y)**2)**(1/2)
+AC=((A_x-C_x)**2+(A_y-C_y)**2)**(1/2)
+p=(AB+BC+AC)/2
+if AB+AC<=BC or AB+BC<=AC or AC+BC<=AB:
     print("这三个点构不成一个三角形")
+else:
+    Area=(p*(p-AB)*(p-AC)*(p-BC))**(1/2)
+    print('该三角形的面积是：{}'.format(Area))

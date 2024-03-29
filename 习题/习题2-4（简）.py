@@ -6,12 +6,12 @@ def InquireCoordinate (n) :
 A_x , A_y = InquireCoordinate ("一")
 B_x , B_y = InquireCoordinate ("二")
 C_x , C_y = InquireCoordinate ("三")
-B_A_x=B_x-A_x
-C_A_x=C_x-A_x
-B_A_y=B_y-A_y
-C_A_y=C_y-A_y
-if (B_A_x/C_A_x)!=(B_A_y/C_A_y):
-    Area=1/2*abs((B_A_x)*(C_A_y)-(B_A_y)*(C_A_x))
-    print('该三角形的面积是：{}'.format(Area))
-else:
+AB=((A_x-B_x)**2+(A_y-B_y)**2)**(1/2)
+BC=((B_x-C_x)**2+(B_y-C_y)**2)**(1/2)
+AC=((A_x-C_x)**2+(A_y-C_y)**2)**(1/2)
+p=(AB+BC+AC)/2
+if AB+AC<=BC or AB+BC<=AC or AC+BC<=AB:
     print("这三个点构不成一个三角形")
+else:
+    Area=(p*(p-AB)*(p-AC)*(p-BC))**(1/2)
+    print('该三角形的面积是：{}'.format(Area))
