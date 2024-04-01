@@ -19,8 +19,8 @@ while True:
         elif Sort=="¥":
             Num=Y_to_D(Num)
             print("{}转换后为{:.2f}$".format(InputNum,Num))
-    except SyntaxError:
-        print("您的输入不符合格式！")
     except KeyboardInterrupt:
         print("\n您已通过ctrl+c退出该程序！\n再见！")
         break
+    except:
+        print("您的输入不符合格式！")
