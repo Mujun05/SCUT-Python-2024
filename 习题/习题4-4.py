@@ -14,10 +14,10 @@ while True:
         Array=[]
         Num=input("请输入一个数:")
         for i in range(1,eval(Num)):
-            if is_self_Divisor(str(i))==False:
-                continue
-            else:
+            if is_self_Divisor(str(i)):
                 Array.append(str(i))
+            else:
+                continue
         print("{}之内的所有自除数为：".format(Num),end='')
         print("，".join(Array),end="。\n")
     except KeyboardInterrupt:

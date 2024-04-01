@@ -1,5 +1,5 @@
 Num=eval(input("请输入一个正整数:"))
-BinaryNum='{:b}'.format(Num)
+BinaryNum=bin(Num)
 OneNum=0
 for i in BinaryNum:
     if i=='1':
