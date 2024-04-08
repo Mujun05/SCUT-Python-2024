@@ -4,9 +4,7 @@ p0=ord(x0)
 p1=ord(x1)
 s=''
 if p0>p1:
-    p=p0
-    p0=p1
-    p1=p
+    p0,p1=p1,p0
 for i in range(p0,p1+1):
     s+=chr(i)
 for j in range(len(s)):
