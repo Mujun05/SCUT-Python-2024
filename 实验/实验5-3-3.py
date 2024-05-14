@@ -16,5 +16,4 @@ sorted_ls=sorted(All_dic.items(),key=lambda x:x[1],reverse=True)
 Ans_ls=[]
 for i in sorted_ls:
     Ans_ls.append(i[0])
-print("不重复的字符是:",end='')
-print(''.join(Ans_ls))
+print("不重复的字符是:"+''.join(Ans_ls))
