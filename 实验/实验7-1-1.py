@@ -1,11 +1,9 @@
-import sys
-sys.set_int_max_str_digits(0)
 # 变量：答案列表
 ans_ls=[]
 # 变量：阶乘的结果
 product=1
 # 构造一个从1到100的循环
-for i in range(1,100001):
+for i in range(1,101):
     # 阶乘的结果乘i再赋给阶乘的结果
     product*=i
     # 按格式将结果加入列表
