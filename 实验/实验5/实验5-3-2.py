@@ -1,5 +1,7 @@
 import random
 # 引入随机数库
+random.seed(10079)
+# 设定随机数种子
 dic={}
 Ans_ls=[]
 Index=0
