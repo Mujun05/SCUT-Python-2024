@@ -17,4 +17,4 @@ while True:
         print("\n您已通过ctrl+c退出该程序！\n再见！")
         break
     except:
-        print("您的输入不符合格式！")
+        print("您的输入不符合格式，请重新输入！")
