@@ -7,8 +7,8 @@ for i in range(16):
     if (i+1)%4==0:
         print(random_num)
     else:
-        print(random_num,' ',sep='',end='')
+        print(f'{random_num:<3}',' ',sep='',end='')
 for i in range(16):
-    for j in range(i,16):
-        dic[ls[i],ls[j]]=ls[i]+ls[j]
-print(dic)
+    for j in range(i+1,16):
+        dic[ls[i],ls[j],i,j]=ls[i]+ls[j]
+sorted_ls=sorted(dic.items(),key=lambda x:x[1])
