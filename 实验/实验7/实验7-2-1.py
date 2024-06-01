@@ -78,7 +78,6 @@ def f_readlines():
     # 使row遍历列表row_ls
     for row in row_ls:
         # 以，为分割符分割字符串row并赋值给列表element_ls
-        element_ls=row.split("，")
         element_ls=row.strip("\n").split("，")
         # 创建一个待用变量Local_count（局部和），将其赋值为0
         Local_count=0
