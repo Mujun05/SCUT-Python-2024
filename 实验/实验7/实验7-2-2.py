@@ -27,3 +27,5 @@ print("-"*30)
 for i in range(5):
     # chr(12288)用于对齐中文（符合题目要求）
     print(f"{i+1}     {sorted_ls[i][0][1]}   {sorted_ls[i][0][2]:{chr(12288)}<3}     {sorted_ls[i][1]}")
+# 关闭文件
+f.close()
