@@ -5,3 +5,4 @@ for n in range (0,4):
     angle = angle+90
     turtle.seth(angle)
     turtle.forward(200*1.414)
+turtle.done()
