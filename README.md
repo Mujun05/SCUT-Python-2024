@@ -1,1 +1,1 @@
-# 该repo已经停止更新
+# 该repo仅适用于scut的python程序设计的官网作业
